@@ -9,7 +9,7 @@ size=10g
 direct=1 # Don't use cache
 ramp_time=5 # measurement start after ramp_time
 # runtime=60 # time limit
-filename=fio-result
+filename=fio-target-file
 
 
 [Seq-Read]

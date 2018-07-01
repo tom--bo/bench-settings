@@ -11,13 +11,36 @@ ramp_time=5 # measurement start after ramp_time
 # runtime=60 # time limit
 filename=fio-target-file
 
-[Seq-Read]
-bs=1m
-rw=read
+[Rand-Read]
+bs=8k
+rw=randread
 wait_for_previous
 
-[Seq-Write]
-bs=1m
-rw=write
+[Rand-Read]
+bs=16k
+rw=randread
+wait_for_previous
+
+[Rand-Read]
+bs=32k
+rw=randread
+wait_for_previous
+
+
+
+ 
+[Rand-Write]
+bs=8k
+rw=randwrite
+wait_for_previous
+
+[Rand-Write]
+bs=16k
+rw=randwrite
+wait_for_previous
+
+[Rand-Write]
+bs=32k
+rw=randwrite
 wait_for_previous
 
